@@ -23,7 +23,7 @@
 		7E2A5B7F24D4784D007F58C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E2A5B7E24D4784D007F58C3 /* Assets.xcassets */; };
 		7E2A5B9424D47923007F58C3 /* StoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A5B9324D47923007F58C3 /* StoreService.swift */; };
 		7E2A5B9624D4792E007F58C3 /* StoreServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A5B9524D4792E007F58C3 /* StoreServiceProtocol.swift */; };
-		7E2A5B9924D47B80007F58C3 /* Push Ups Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A5B9724D47B80007F58C3 /* Push Ups Model.xcdatamodeld */; };
+		7E2A5B9924D47B80007F58C3 /* PushUpsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A5B9724D47B80007F58C3 /* PushUpsModel.xcdatamodeld */; };
 		7E2A5B9C24D4854E007F58C3 /* Workout+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A5B9A24D4854E007F58C3 /* Workout+CoreDataClass.swift */; };
 		7E2A5B9D24D4854E007F58C3 /* Workout+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A5B9B24D4854E007F58C3 /* Workout+CoreDataProperties.swift */; };
 		7E2A5BA224D485B5007F58C3 /* WorkoutListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A5BA124D485B5007F58C3 /* WorkoutListInteractor.swift */; };
@@ -32,6 +32,8 @@
 		7E2A5BA824D485E7007F58C3 /* WorkoutListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A5BA724D485E7007F58C3 /* WorkoutListConfigurator.swift */; };
 		7E2A5BAA24D485F3007F58C3 /* WorkoutListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A5BA924D485F3007F58C3 /* WorkoutListRouter.swift */; };
 		7E2A5BAC24D48606007F58C3 /* WorkoutListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A5BAB24D48606007F58C3 /* WorkoutListProtocols.swift */; };
+		7E2A5BB024D489BF007F58C3 /* WorkoutCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A5BAF24D489BF007F58C3 /* WorkoutCellProtocol.swift */; };
+		7E2A5BB224D489DA007F58C3 /* WorkoutCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A5BB124D489DA007F58C3 /* WorkoutCellTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +118,8 @@
 		7E2A5BA724D485E7007F58C3 /* WorkoutListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListConfigurator.swift; sourceTree = "<group>"; };
 		7E2A5BA924D485F3007F58C3 /* WorkoutListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListRouter.swift; sourceTree = "<group>"; };
 		7E2A5BAB24D48606007F58C3 /* WorkoutListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListProtocols.swift; sourceTree = "<group>"; };
+		7E2A5BAF24D489BF007F58C3 /* WorkoutCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCellProtocol.swift; sourceTree = "<group>"; };
+		7E2A5BB124D489DA007F58C3 /* WorkoutCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCellTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +172,7 @@
 		7E2A5B4724D47849007F58C3 /* Push ups counter */ = {
 			isa = PBXGroup;
 			children = (
+				7E2A5BAD24D489A9007F58C3 /* View */,
 				7E2A5B9F24D48593007F58C3 /* Module */,
 				7E2A5B9E24D48552007F58C3 /* Entity */,
 				7E2A5B9224D4790E007F58C3 /* Services */,
@@ -218,7 +223,7 @@
 			children = (
 				7E2A5B9324D47923007F58C3 /* StoreService.swift */,
 				7E2A5B9524D4792E007F58C3 /* StoreServiceProtocol.swift */,
-				7E2A5B9724D47B80007F58C3 /* Push Ups Model.xcdatamodeld */,
+				7E2A5B9724D47B80007F58C3 /* PushUpsModel.xcdatamodeld */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -251,6 +256,23 @@
 				7E2A5BAB24D48606007F58C3 /* WorkoutListProtocols.swift */,
 			);
 			path = "Workout List";
+			sourceTree = "<group>";
+		};
+		7E2A5BAD24D489A9007F58C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7E2A5BAE24D489AE007F58C3 /* Workout Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7E2A5BAE24D489AE007F58C3 /* Workout Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7E2A5BAF24D489BF007F58C3 /* WorkoutCellProtocol.swift */,
+				7E2A5BB124D489DA007F58C3 /* WorkoutCellTableViewCell.swift */,
+			);
+			path = "Workout Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -416,9 +438,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E2A5BA224D485B5007F58C3 /* WorkoutListInteractor.swift in Sources */,
+				7E2A5BB024D489BF007F58C3 /* WorkoutCellProtocol.swift in Sources */,
+				7E2A5BB224D489DA007F58C3 /* WorkoutCellTableViewCell.swift in Sources */,
 				7E2A5B9C24D4854E007F58C3 /* Workout+CoreDataClass.swift in Sources */,
 				7E2A5BA624D485D9007F58C3 /* WorkoutListPresenter.swift in Sources */,
-				7E2A5B9924D47B80007F58C3 /* Push Ups Model.xcdatamodeld in Sources */,
+				7E2A5B9924D47B80007F58C3 /* PushUpsModel.xcdatamodeld in Sources */,
 				7E2A5B9D24D4854E007F58C3 /* Workout+CoreDataProperties.swift in Sources */,
 				7E2A5B4924D47849007F58C3 /* AppDelegate.swift in Sources */,
 				7E2A5BA824D485E7007F58C3 /* WorkoutListConfigurator.swift in Sources */,
@@ -824,13 +848,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		7E2A5B9724D47B80007F58C3 /* Push Ups Model.xcdatamodeld */ = {
+		7E2A5B9724D47B80007F58C3 /* PushUpsModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				7E2A5B9824D47B80007F58C3 /* Push Ups Model.xcdatamodel */,
 			);
 			currentVersion = 7E2A5B9824D47B80007F58C3 /* Push Ups Model.xcdatamodel */;
-			path = "Push Ups Model.xcdatamodeld";
+			path = PushUpsModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

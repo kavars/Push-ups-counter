@@ -1,27 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dAn-Zg-qYn">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="piW-XC-62l">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Workout List Table View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="6eZ-ut-RsM">
+            <objects>
+                <navigationController id="piW-XC-62l" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="4MN-pC-6F8">
+                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="dAn-Zg-qYn" kind="relationship" relationship="rootViewController" id="GLp-eS-Dgm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uh1-BY-FPz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-965" y="151"/>
+        </scene>
+        <!--Workout count-->
         <scene sceneID="Iw0-HE-sWn">
             <objects>
                 <tableViewController id="dAn-Zg-qYn" customClass="WorkoutListTableViewController" customModule="Push_ups_counter" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="aBv-43-lKE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Ioq-Fx-PXV">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="workoutCellID" id="Ioq-Fx-PXV" customClass="WorkoutCellTableViewCell" customModule="Push_ups_counter" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ioq-Fx-PXV" id="9ya-Wb-xuq">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWO-Ck-sXX">
+                                            <rect key="frame" x="20" y="11.000000000000002" width="36" height="21.666666666666671"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="36" id="YBz-ZY-7L4"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Count" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t9f-d4-j0z">
+                                            <rect key="frame" x="313" y="11.000000000000002" width="47" height="21.666666666666671"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="47" id="daa-tM-Fxg"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="uWO-Ck-sXX" secondAttribute="bottom" constant="11.5" id="6ad-4o-fLx"/>
+                                        <constraint firstItem="t9f-d4-j0z" firstAttribute="top" secondItem="9ya-Wb-xuq" secondAttribute="top" constant="11" id="CsY-Ne-Jkc"/>
+                                        <constraint firstItem="uWO-Ck-sXX" firstAttribute="top" secondItem="9ya-Wb-xuq" secondAttribute="top" constant="11" id="Ez3-sv-24Y"/>
+                                        <constraint firstItem="uWO-Ck-sXX" firstAttribute="leading" secondItem="9ya-Wb-xuq" secondAttribute="leading" constant="20" id="Op0-1f-RiS"/>
+                                        <constraint firstAttribute="trailing" secondItem="t9f-d4-j0z" secondAttribute="trailing" constant="15" id="aeF-qx-e2R"/>
+                                        <constraint firstAttribute="bottom" secondItem="t9f-d4-j0z" secondAttribute="bottom" constant="11.5" id="oOj-eD-5Mu"/>
+                                        <constraint firstItem="t9f-d4-j0z" firstAttribute="leading" relation="lessThanOrEqual" secondItem="uWO-Ck-sXX" secondAttribute="trailing" constant="296" id="qVw-x3-Mhh"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="countLabel" destination="t9f-d4-j0z" id="Ypw-Ms-7C5"/>
+                                    <outlet property="dateLabel" destination="uWO-Ck-sXX" id="3c4-ZV-66y"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -29,6 +78,13 @@
                             <outlet property="delegate" destination="dAn-Zg-qYn" id="XYS-zK-Zbm"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Workout count" id="jNn-7a-Tvl">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="8kB-wI-WJx">
+                            <connections>
+                                <action selector="addWorkout:" destination="dAn-Zg-qYn" id="h9y-15-kNr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="csc-rS-vdw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
