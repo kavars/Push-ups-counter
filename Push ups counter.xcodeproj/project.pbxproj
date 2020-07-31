@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E2A5B4924D47849007F58C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A5B4824D47849007F58C3 /* AppDelegate.swift */; };
+		7E2A5B4B24D47849007F58C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A5B4A24D47849007F58C3 /* SceneDelegate.swift */; };
+		7E2A5B4D24D47849007F58C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A5B4C24D47849007F58C3 /* ViewController.swift */; };
+		7E2A5B5024D47849007F58C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E2A5B4E24D47849007F58C3 /* Main.storyboard */; };
+		7E2A5B5224D4784C007F58C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E2A5B5124D4784C007F58C3 /* Assets.xcassets */; };
+		7E2A5B5524D4784C007F58C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E2A5B5324D4784C007F58C3 /* LaunchScreen.storyboard */; };
+		7E2A5B6024D4784C007F58C3 /* Push_ups_counterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A5B5F24D4784C007F58C3 /* Push_ups_counterTests.swift */; };
+		7E2A5B6524D4784C007F58C3 /* Push ups counter WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7E2A5B6424D4784C007F58C3 /* Push ups counter WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7E2A5B6B24D4784C007F58C3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E2A5B6924D4784C007F58C3 /* Interface.storyboard */; };
+		7E2A5B6D24D4784C007F58C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E2A5B6C24D4784C007F58C3 /* Assets.xcassets */; };
+		7E2A5B7424D4784C007F58C3 /* Push ups counter WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7E2A5B7324D4784C007F58C3 /* Push ups counter WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7E2A5B7924D4784C007F58C3 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A5B7824D4784C007F58C3 /* InterfaceController.swift */; };
+		7E2A5B7B24D4784C007F58C3 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A5B7A24D4784C007F58C3 /* ExtensionDelegate.swift */; };
+		7E2A5B7D24D4784C007F58C3 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A5B7C24D4784C007F58C3 /* NotificationController.swift */; };
+		7E2A5B7F24D4784D007F58C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E2A5B7E24D4784D007F58C3 /* Assets.xcassets */; };
+		7E2A5B9424D47923007F58C3 /* StoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A5B9324D47923007F58C3 /* StoreService.swift */; };
+		7E2A5B9624D4792E007F58C3 /* StoreServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A5B9524D4792E007F58C3 /* StoreServiceProtocol.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E2A5B5C24D4784C007F58C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E2A5B3D24D47849007F58C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E2A5B4424D47849007F58C3;
+			remoteInfo = "Push ups counter";
+		};
+		7E2A5B6624D4784C007F58C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E2A5B3D24D47849007F58C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E2A5B6324D4784C007F58C3;
+			remoteInfo = "Push ups counter WatchKit App";
+		};
+		7E2A5B7524D4784C007F58C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E2A5B3D24D47849007F58C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E2A5B7224D4784C007F58C3;
+			remoteInfo = "Push ups counter WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7E2A5B8724D4784D007F58C3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7E2A5B7424D4784C007F58C3 /* Push ups counter WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E2A5B8B24D4784D007F58C3 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				7E2A5B6524D4784C007F58C3 /* Push ups counter WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7E2A5B4524D47849007F58C3 /* Push ups counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Push ups counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E2A5B4824D47849007F58C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7E2A5B4A24D47849007F58C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7E2A5B4C24D47849007F58C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7E2A5B4F24D47849007F58C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7E2A5B5124D4784C007F58C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E2A5B5424D4784C007F58C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7E2A5B5624D4784C007F58C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E2A5B5B24D4784C007F58C3 /* Push ups counterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Push ups counterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E2A5B5F24D4784C007F58C3 /* Push_ups_counterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Push_ups_counterTests.swift; sourceTree = "<group>"; };
+		7E2A5B6124D4784C007F58C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E2A5B6424D4784C007F58C3 /* Push ups counter WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Push ups counter WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E2A5B6A24D4784C007F58C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		7E2A5B6C24D4784C007F58C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E2A5B6E24D4784C007F58C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E2A5B7324D4784C007F58C3 /* Push ups counter WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Push ups counter WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E2A5B7824D4784C007F58C3 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		7E2A5B7A24D4784C007F58C3 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		7E2A5B7C24D4784C007F58C3 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		7E2A5B7E24D4784D007F58C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E2A5B8024D4784D007F58C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E2A5B8124D4784D007F58C3 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		7E2A5B9324D47923007F58C3 /* StoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreService.swift; sourceTree = "<group>"; };
+		7E2A5B9524D4792E007F58C3 /* StoreServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreServiceProtocol.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E2A5B4224D47849007F58C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E2A5B5824D4784C007F58C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E2A5B7024D4784C007F58C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E2A5B3C24D47849007F58C3 = {
+			isa = PBXGroup;
+			children = (
+				7E2A5B4724D47849007F58C3 /* Push ups counter */,
+				7E2A5B5E24D4784C007F58C3 /* Push ups counterTests */,
+				7E2A5B6824D4784C007F58C3 /* Push ups counter WatchKit App */,
+				7E2A5B7724D4784C007F58C3 /* Push ups counter WatchKit Extension */,
+				7E2A5B4624D47849007F58C3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7E2A5B4624D47849007F58C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E2A5B4524D47849007F58C3 /* Push ups counter.app */,
+				7E2A5B5B24D4784C007F58C3 /* Push ups counterTests.xctest */,
+				7E2A5B6424D4784C007F58C3 /* Push ups counter WatchKit App.app */,
+				7E2A5B7324D4784C007F58C3 /* Push ups counter WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E2A5B4724D47849007F58C3 /* Push ups counter */ = {
+			isa = PBXGroup;
+			children = (
+				7E2A5B9224D4790E007F58C3 /* Services */,
+				7E2A5B4824D47849007F58C3 /* AppDelegate.swift */,
+				7E2A5B4A24D47849007F58C3 /* SceneDelegate.swift */,
+				7E2A5B4C24D47849007F58C3 /* ViewController.swift */,
+				7E2A5B4E24D47849007F58C3 /* Main.storyboard */,
+				7E2A5B5124D4784C007F58C3 /* Assets.xcassets */,
+				7E2A5B5324D4784C007F58C3 /* LaunchScreen.storyboard */,
+				7E2A5B5624D4784C007F58C3 /* Info.plist */,
+			);
+			path = "Push ups counter";
+			sourceTree = "<group>";
+		};
+		7E2A5B5E24D4784C007F58C3 /* Push ups counterTests */ = {
+			isa = PBXGroup;
+			children = (
+				7E2A5B5F24D4784C007F58C3 /* Push_ups_counterTests.swift */,
+				7E2A5B6124D4784C007F58C3 /* Info.plist */,
+			);
+			path = "Push ups counterTests";
+			sourceTree = "<group>";
+		};
+		7E2A5B6824D4784C007F58C3 /* Push ups counter WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				7E2A5B6924D4784C007F58C3 /* Interface.storyboard */,
+				7E2A5B6C24D4784C007F58C3 /* Assets.xcassets */,
+				7E2A5B6E24D4784C007F58C3 /* Info.plist */,
+			);
+			path = "Push ups counter WatchKit App";
+			sourceTree = "<group>";
+		};
+		7E2A5B7724D4784C007F58C3 /* Push ups counter WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7E2A5B7824D4784C007F58C3 /* InterfaceController.swift */,
+				7E2A5B7A24D4784C007F58C3 /* ExtensionDelegate.swift */,
+				7E2A5B7C24D4784C007F58C3 /* NotificationController.swift */,
+				7E2A5B7E24D4784D007F58C3 /* Assets.xcassets */,
+				7E2A5B8024D4784D007F58C3 /* Info.plist */,
+				7E2A5B8124D4784D007F58C3 /* PushNotificationPayload.apns */,
+			);
+			path = "Push ups counter WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		7E2A5B9224D4790E007F58C3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7E2A5B9324D47923007F58C3 /* StoreService.swift */,
+				7E2A5B9524D4792E007F58C3 /* StoreServiceProtocol.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E2A5B4424D47849007F58C3 /* Push ups counter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E2A5B8C24D4784D007F58C3 /* Build configuration list for PBXNativeTarget "Push ups counter" */;
+			buildPhases = (
+				7E2A5B4124D47849007F58C3 /* Sources */,
+				7E2A5B4224D47849007F58C3 /* Frameworks */,
+				7E2A5B4324D47849007F58C3 /* Resources */,
+				7E2A5B8B24D4784D007F58C3 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E2A5B6724D4784C007F58C3 /* PBXTargetDependency */,
+			);
+			name = "Push ups counter";
+			productName = "Push ups counter";
+			productReference = 7E2A5B4524D47849007F58C3 /* Push ups counter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7E2A5B5A24D4784C007F58C3 /* Push ups counterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E2A5B8F24D4784D007F58C3 /* Build configuration list for PBXNativeTarget "Push ups counterTests" */;
+			buildPhases = (
+				7E2A5B5724D4784C007F58C3 /* Sources */,
+				7E2A5B5824D4784C007F58C3 /* Frameworks */,
+				7E2A5B5924D4784C007F58C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E2A5B5D24D4784C007F58C3 /* PBXTargetDependency */,
+			);
+			name = "Push ups counterTests";
+			productName = "Push ups counterTests";
+			productReference = 7E2A5B5B24D4784C007F58C3 /* Push ups counterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7E2A5B6324D4784C007F58C3 /* Push ups counter WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E2A5B8824D4784D007F58C3 /* Build configuration list for PBXNativeTarget "Push ups counter WatchKit App" */;
+			buildPhases = (
+				7E2A5B6224D4784C007F58C3 /* Resources */,
+				7E2A5B8724D4784D007F58C3 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E2A5B7624D4784C007F58C3 /* PBXTargetDependency */,
+			);
+			name = "Push ups counter WatchKit App";
+			productName = "Push ups counter WatchKit App";
+			productReference = 7E2A5B6424D4784C007F58C3 /* Push ups counter WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		7E2A5B7224D4784C007F58C3 /* Push ups counter WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E2A5B8424D4784D007F58C3 /* Build configuration list for PBXNativeTarget "Push ups counter WatchKit Extension" */;
+			buildPhases = (
+				7E2A5B6F24D4784C007F58C3 /* Sources */,
+				7E2A5B7024D4784C007F58C3 /* Frameworks */,
+				7E2A5B7124D4784C007F58C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Push ups counter WatchKit Extension";
+			productName = "Push ups counter WatchKit Extension";
+			productReference = 7E2A5B7324D4784C007F58C3 /* Push ups counter WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E2A5B3D24D47849007F58C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Kirill Varshamov";
+				TargetAttributes = {
+					7E2A5B4424D47849007F58C3 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					7E2A5B5A24D4784C007F58C3 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 7E2A5B4424D47849007F58C3;
+					};
+					7E2A5B6324D4784C007F58C3 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					7E2A5B7224D4784C007F58C3 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 7E2A5B4024D47849007F58C3 /* Build configuration list for PBXProject "Push ups counter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7E2A5B3C24D47849007F58C3;
+			productRefGroup = 7E2A5B4624D47849007F58C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E2A5B4424D47849007F58C3 /* Push ups counter */,
+				7E2A5B5A24D4784C007F58C3 /* Push ups counterTests */,
+				7E2A5B6324D4784C007F58C3 /* Push ups counter WatchKit App */,
+				7E2A5B7224D4784C007F58C3 /* Push ups counter WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E2A5B4324D47849007F58C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E2A5B5524D4784C007F58C3 /* LaunchScreen.storyboard in Resources */,
+				7E2A5B5224D4784C007F58C3 /* Assets.xcassets in Resources */,
+				7E2A5B5024D47849007F58C3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E2A5B5924D4784C007F58C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E2A5B6224D4784C007F58C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E2A5B6D24D4784C007F58C3 /* Assets.xcassets in Resources */,
+				7E2A5B6B24D4784C007F58C3 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E2A5B7124D4784C007F58C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E2A5B7F24D4784D007F58C3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E2A5B4124D47849007F58C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E2A5B4D24D47849007F58C3 /* ViewController.swift in Sources */,
+				7E2A5B4924D47849007F58C3 /* AppDelegate.swift in Sources */,
+				7E2A5B4B24D47849007F58C3 /* SceneDelegate.swift in Sources */,
+				7E2A5B9624D4792E007F58C3 /* StoreServiceProtocol.swift in Sources */,
+				7E2A5B9424D47923007F58C3 /* StoreService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E2A5B5724D4784C007F58C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E2A5B6024D4784C007F58C3 /* Push_ups_counterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E2A5B6F24D4784C007F58C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E2A5B7D24D4784C007F58C3 /* NotificationController.swift in Sources */,
+				7E2A5B7B24D4784C007F58C3 /* ExtensionDelegate.swift in Sources */,
+				7E2A5B7924D4784C007F58C3 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7E2A5B5D24D4784C007F58C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E2A5B4424D47849007F58C3 /* Push ups counter */;
+			targetProxy = 7E2A5B5C24D4784C007F58C3 /* PBXContainerItemProxy */;
+		};
+		7E2A5B6724D4784C007F58C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E2A5B6324D4784C007F58C3 /* Push ups counter WatchKit App */;
+			targetProxy = 7E2A5B6624D4784C007F58C3 /* PBXContainerItemProxy */;
+		};
+		7E2A5B7624D4784C007F58C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E2A5B7224D4784C007F58C3 /* Push ups counter WatchKit Extension */;
+			targetProxy = 7E2A5B7524D4784C007F58C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7E2A5B4E24D47849007F58C3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E2A5B4F24D47849007F58C3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7E2A5B5324D4784C007F58C3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E2A5B5424D4784C007F58C3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7E2A5B6924D4784C007F58C3 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E2A5B6A24D4784C007F58C3 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E2A5B8224D4784D007F58C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7E2A5B8324D4784D007F58C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E2A5B8524D4784D007F58C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82CJ7XMF7V;
+				INFOPLIST_FILE = "Push ups counter WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kaviro.Push-ups-counter.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		7E2A5B8624D4784D007F58C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82CJ7XMF7V;
+				INFOPLIST_FILE = "Push ups counter WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kaviro.Push-ups-counter.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		7E2A5B8924D4784D007F58C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82CJ7XMF7V;
+				IBSC_MODULE = Push_ups_counter_WatchKit_Extension;
+				INFOPLIST_FILE = "Push ups counter WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Kaviro.Push-ups-counter.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		7E2A5B8A24D4784D007F58C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82CJ7XMF7V;
+				IBSC_MODULE = Push_ups_counter_WatchKit_Extension;
+				INFOPLIST_FILE = "Push ups counter WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Kaviro.Push-ups-counter.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		7E2A5B8D24D4784D007F58C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82CJ7XMF7V;
+				INFOPLIST_FILE = "Push ups counter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kaviro.Push-ups-counter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7E2A5B8E24D4784D007F58C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82CJ7XMF7V;
+				INFOPLIST_FILE = "Push ups counter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kaviro.Push-ups-counter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7E2A5B9024D4784D007F58C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82CJ7XMF7V;
+				INFOPLIST_FILE = "Push ups counterTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kaviro.Push-ups-counterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Push ups counter.app/Push ups counter";
+			};
+			name = Debug;
+		};
+		7E2A5B9124D4784D007F58C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82CJ7XMF7V;
+				INFOPLIST_FILE = "Push ups counterTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kaviro.Push-ups-counterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Push ups counter.app/Push ups counter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E2A5B4024D47849007F58C3 /* Build configuration list for PBXProject "Push ups counter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E2A5B8224D4784D007F58C3 /* Debug */,
+				7E2A5B8324D4784D007F58C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E2A5B8424D4784D007F58C3 /* Build configuration list for PBXNativeTarget "Push ups counter WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E2A5B8524D4784D007F58C3 /* Debug */,
+				7E2A5B8624D4784D007F58C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E2A5B8824D4784D007F58C3 /* Build configuration list for PBXNativeTarget "Push ups counter WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E2A5B8924D4784D007F58C3 /* Debug */,
+				7E2A5B8A24D4784D007F58C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E2A5B8C24D4784D007F58C3 /* Build configuration list for PBXNativeTarget "Push ups counter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E2A5B8D24D4784D007F58C3 /* Debug */,
+				7E2A5B8E24D4784D007F58C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E2A5B8F24D4784D007F58C3 /* Build configuration list for PBXNativeTarget "Push ups counterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E2A5B9024D4784D007F58C3 /* Debug */,
+				7E2A5B9124D4784D007F58C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7E2A5B3D24D47849007F58C3 /* Project object */;
+}
